@@ -386,7 +386,7 @@ a:hover{
       position: absolute;
       bottom: 29px;
       left: 50%;
-      transform: rotateY(-50%);
+      transform: translateX(-50%);
 
       li {
         margin: 0 4px;
@@ -952,11 +952,11 @@ a:hover{
     &-items {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: flex-start;
       margin: 0 -26px;
 
       .main-responsive-slider-item {
-        margin-bottom: 50px;
+        margin: 0 26.5px 50px;
       }
     }
   }
