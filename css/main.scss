@@ -1038,6 +1038,8 @@ a:hover{
 
 .form-group {
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
@@ -2080,5 +2082,47 @@ input[type=range] {
         background: $colorBlack;
       }
     }
+  }
+}
+
+.popup-load {
+  background: $colorBlack;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border-radius: 50%;
+  border: 5px solid $colorWhite;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  } to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.show-more {
+  padding: 0 5px;
+  background: #CF2828;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.checked {
+    display: block;
   }
 }

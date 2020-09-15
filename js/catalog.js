@@ -38,6 +38,17 @@ $( document ).ready(function() {
     $( "#lower" ).mousemove(function() {
         $(".rangeslider-input-lower").val($(this).val());
     });
+
+    $("input[type=checkbox]").click( function(){
+        if( $(this).is(':checked') ) {
+            $('.show-more').removeClass("checked");
+            $(this).parent().addClass("checked");
+            $(this).parent().children('.show-more').addClass("checked");
+        } else {
+            $(this).parent().children('.show-more').removeClass("checked");
+            $(this).parent().removeClass("checked");
+        }
+    });
 });
 
 window.onload = function() {
