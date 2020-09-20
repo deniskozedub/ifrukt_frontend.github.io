@@ -1,0 +1,44 @@
+.news-card {
+  margin-top: 68px;
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+
+  &-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .news-item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .news-item-image {
+    max-width: 538px;
+    width: 100%;
+    margin-right: 32px;
+    height: 352px;
+  }
+
+  .news-item-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  .news-item-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+}

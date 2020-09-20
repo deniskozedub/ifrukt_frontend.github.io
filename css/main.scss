@@ -633,6 +633,7 @@ a:hover{
 
 .news {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: .3px solid $colorSilverLight;
   position: relative;
