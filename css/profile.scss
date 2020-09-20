@@ -471,3 +471,30 @@ $colorPersianRed: #cf2828;
   }
 }
 
+.popup-phone,
+.popup-address {
+  .popup-content {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .popup-submit {
+    margin-top: 40px;
+  }
+}
+
+#phone-popup,
+#address-popup {
+  max-width: 533px;
+  width: 100%;
+}
+
+.profile-flex-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .popup-input {
+    max-width: 125px;
+  }
+}

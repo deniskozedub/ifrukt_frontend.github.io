@@ -210,14 +210,14 @@
             <p class="profile-info-address-title">Aдреса</p>
             <div>
                 <p>вы можете добавить до 5 адресов и сделать один из них основным.</p>
-                <button class="profile-info-btn">Добавить адрес</button>
+                <button class="profile-info-btn open-popup-address">Добавить адрес</button>
             </div>
         </div>
         <div class="profile-info-address">
             <p class="profile-info-address-title">Tелефоны</p>
             <div>
                 <p>вы можете добавить до 5 телефонов и сделать один из них основным.</p>
-                <button class="profile-info-btn">Добавить телефон</button>
+                <button class="profile-info-btn open-popup-phone">Добавить телефон</button>
             </div>
         </div>
         <div class="profile-info-phone">
@@ -226,7 +226,7 @@
                 <p>+375 (25) 953-45-17</p>
             </div>
             <div class="profile-info-phone-btns">
-                <button><img src="../images/data.svg" alt=""></button>
+                <button class="open-popup-phone"><img src="../images/data.svg" alt=""></button>
                 <button><img src="../images/close.svg" alt=""></button>
             </div>
         </div>
@@ -248,6 +248,50 @@
 
             <button class="popup-submit" type="submit">
                 Готово
+            </button>
+        </form>
+    </div>
+</div>
+<div class="popup popup-address">
+    <div class="popup-bg"></div>
+    <div class="popup-content">
+        <button class="popup-close">
+            <img src="../images/close.jpg" alt="">
+        </button>
+        <h2 class="popup-title">добавление адреса</h2>
+        <form>
+            <input class="popup-input" type="text" placeholder="населенный пункт">
+            <input class="popup-input" type="text" placeholder="улица, дом">
+            <div class="profile-flex-input">
+                <input class="popup-input" type="text" placeholder="подъезд">
+                <input class="popup-input" type="text" placeholder="корпус">
+                <input class="popup-input" type="text" placeholder="этаж">
+            </div>
+            <div class="form-group">
+                <input id="address-popup" type="checkbox">
+                <label for="address-popup">сделать основным</label>
+            </div>
+            <button class="popup-submit" type="submit">
+                добавить
+            </button>
+        </form>
+    </div>
+</div>
+<div class="popup popup-phone">
+    <div class="popup-bg"></div>
+    <div class="popup-content">
+        <button class="popup-close">
+            <img src="../images/close.jpg" alt="">
+        </button>
+        <h2 class="popup-title">добавление телефона</h2>
+        <form>
+            <input class="popup-input" type="text" placeholder="Hомер телефона">
+            <div class="form-group">
+                <input id="phone-popup" type="checkbox">
+                <label for="phone-popup">сделать основным</label>
+            </div>
+            <button class="popup-submit" type="submit">
+                добавить
             </button>
         </form>
     </div>

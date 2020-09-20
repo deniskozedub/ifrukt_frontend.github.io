@@ -1069,7 +1069,7 @@ a:hover{
   }
 
   input:checked + label:after {
-    content: url('./images/checked.png');
+    content: url('../images/checked.png');
     display: block;
     position: absolute;
     top: 52%;
