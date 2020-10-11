@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    const orderText = $('.order-info p');
     $('.order-form-radio-last label.radio').click(function () {
         $('.order-form-radio-last label.radio').removeClass('checked');
         $(this).addClass('checked');
@@ -13,8 +14,8 @@ $( document ).ready(function() {
     });
 
     $('#select').change(function () {
-        $('.order-info p').text(`${$( "#select option:selected" ).text()}: `);
-        $('.order-info p').append('<span>');
+        orderText.text(`${$( "#select option:selected" ).text()}: `);
+        orderText.append('<span>');
         $('#address').val('');
     })
 });
