@@ -7,4 +7,8 @@ $( document ).ready(function() {
         $('.sublist label.sub-radio').removeClass('checked-list');
         $(this).addClass('checked-list');
     })
+
+    $('#address').blur( function () {
+        $('.order-info span').text(this.value);
+    });
 });
