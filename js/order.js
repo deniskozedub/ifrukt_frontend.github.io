@@ -8,7 +8,13 @@ $( document ).ready(function() {
         $(this).addClass('checked-list');
     })
 
-    $('#address').blur( function () {
+    $('#address').keyup(function () {
         $('.order-info span').text(this.value);
     });
+
+    $('#select').change(function () {
+        $('.order-info p').text(`${$( "#select option:selected" ).text()}: `);
+        $('.order-info p').append('<span>');
+        $('#address').val('');
+    })
 });
