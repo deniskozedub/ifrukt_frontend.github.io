@@ -311,6 +311,10 @@ a:hover{
 
       &-image {
         margin-right: 100px;
+
+        img {
+          max-width: 523px;
+        }
       }
 
       &-info {
@@ -557,6 +561,7 @@ a:hover{
 
         img {
           margin: auto auto 0;
+          max-width: 197px;
         }
       }
 
@@ -1567,6 +1572,7 @@ input[type=range] {
     &-reviews {
       width: 100%;
       max-width: 769px;
+      min-height: 500px;
 
       &-form {
         width:300px;
@@ -1805,6 +1811,7 @@ input[type=range] {
     position: absolute;
     top: 14px;
     right: 16px;
+    z-index: 9;
 
     &-pass {
       img {
@@ -1905,6 +1912,15 @@ input[type=range] {
 
     img {
       margin-right: 12px;
+    }
+  }
+
+  &-reviews {
+    .popup-content {
+      max-width: 365px;
+      height: 451px;
+      padding: 0;
+      width: 100%;
     }
   }
 }

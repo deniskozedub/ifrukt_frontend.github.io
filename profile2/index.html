@@ -232,7 +232,7 @@
                     <p>доставлено</p>
                 </div>
                 <div class="profile-info-order-block">
-                    <button>оставить отзыв</button>
+                    <button class="open-reviews-popup">оставить отзыв</button>
                 </div>
                 <div>
                     <button class="profile-info-order-block-close">
@@ -434,7 +434,34 @@
         </div>
     </div>
 </footer>
+
+<div class="popup popup-reviews">
+    <div class="popup-bg"></div>
+    <div class="popup-content">
+        <button class="popup-close">
+            <img src="../images/close.jpg" alt="">
+        </button>
+        <div class="tabs__content-reviews-leave">
+            <h3>оставить отзыв</h3>
+            <form class="tabs__content-reviews-form" action="">
+                <div class="tabs__content-reviews-form-flex">
+                    <div class="tabs__content-reviews-form-rating" data-rateyo-rating="0"></div>
+                    <span>оцените товар</span>
+                </div>
+                <input class="tabs__content-reviews-form-input" type="text" placeholder="Bаше имя">
+                <input class="tabs__content-reviews-form-input" type="text" placeholder="Bаш отзыв">
+                <button class="tabs__content-reviews-form-submit" type="submit">
+                    Oтправить отзыв
+                </button>
+            </form>
+            <p>Для того, чтобы оставить отзыв</p>
+            <a href="#">Aвторизуйтесь</a>
+        </div>
+    </div>
+</div>
 <script src="../js/jquery.js"></script>
+<script src="../js/rateyo.js"></script>
+<script src="../js/global.js"></script>
 <script src="../js/profile.js"></script>
 </body>
 </html>

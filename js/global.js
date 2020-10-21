@@ -8,6 +8,10 @@ $( document ).ready(function() {
         $('.popup-login').addClass(' popup-open');
     })
 
+    $('.open-reviews-popup').click(function () {
+        $('.popup-reviews').addClass(' popup-open');
+    })
+
     $('.popup-close').click(function () {
         $('.popup').removeClass('popup-open');
         if ($('.main-responsive-slider-item.active').length) {

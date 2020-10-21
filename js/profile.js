@@ -23,5 +23,13 @@ $( document ).ready(function() {
       ratedFill: "#F0C963",
     });
   }
+
+  $(".tabs__content-reviews-form-rating").rateYo({
+    rating: 1.5,
+    halfStar: true,
+    starWidth: "25px",
+    normalFill: "#C4C4C4",
+    ratedFill: "#F0C963",
+  });
 });
 
